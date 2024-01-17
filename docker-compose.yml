@@ -3,18 +3,6 @@ version: "3.8"
 services:
   cache:
     image: redis:4-alpine
-
-  database:
-    image: mysql:8.0-oracle
-    ports:
-      - "3306:3306"
-    volumes:
-      - "./docker/database/:/docker-entrypoint-initdb.d/"
-      - "./docker/database/mysql:/var/lib/mysql"
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-      MYSQL_DATABASE: "fleetbase"
-
   socket:
     image: socketcluster/socketcluster:v17.4.0
     ports:
