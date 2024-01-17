@@ -41,7 +41,6 @@ services:
       APP_NAME: Fleetbase
       LOG_CHANNEL: daily
     depends_on:
-      - database
       - cache
 
   httpd:
