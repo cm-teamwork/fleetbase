@@ -30,7 +30,7 @@ services:
       args:
         ENVIRONMENT: development
     environment:
-      DATABASE_URL: "mysql://root@172.18.0.1/fleetbase"
+      DATABASE_URL: "mysql://root:Db@PAssFleet@172.18.0.1:3306/fleetbase"
       CACHE_DRIVER: redis
       CACHE_PATH: /var/www/html/api/storage/framework/cache
       CACHE_URL: tcp://cache
