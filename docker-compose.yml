@@ -30,8 +30,7 @@ services:
       args:
         ENVIRONMENT: development
     environment:
-      DATABASE_URL: "mysql://fleet:$FVn&h2Ahn@95.216.199.131:3306/fleetbase"
-      DB_PASSWORD: "$FVn&h2Ahn"
+      DATABASE_URL: "mysql://fleet:$FVn%26h2Ahn@95.216.199.131:3306/fleetbase"
       CACHE_DRIVER: redis
       CACHE_PATH: /var/www/html/api/storage/framework/cache
       CACHE_URL: tcp://cache
